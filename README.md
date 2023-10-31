@@ -8,9 +8,9 @@ This is the repository for the website of the Cyb Robotics Organization.
 
 To deploy this project locally, follow these steps:
 
-1. Clone the repository to your local machine: `git clone https://github.com/ReemanS/cyb-org-website.git`
+1. Clone the repository to your local machine: `git clone https://github.com/allyn8444/Cyb-Org-Website.git`
 
-2. Navigate to the project directory: `cd cyb-org-website`
+2. Navigate to the project directory: `cd Cyb-Org-Website`
 
 3. Install the dependencies: `npm install`
 
