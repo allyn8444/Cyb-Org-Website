@@ -129,7 +129,7 @@ export default function Nav() {
       </AnimatePresence>
 
       {/* Desktop navbar */}
-      <nav className="h-32 w-full  fixed top-0 left-0 z-[1] text-lg bg-gradient-to-b from-primary-dark">
+      <nav className="h-32 w-full  fixed top-0 left-0 z-20 text-lg bg-gradient-to-b from-primary-dark">
         <div className="mx-auto max-w-full h-full flex items-center ">
           {/* LOGO */}
           <motion.a
