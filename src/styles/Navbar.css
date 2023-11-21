@@ -18,3 +18,18 @@
 .nav-items:hover::after {
   transform: scaleX(1);
 }
+
+.nav-logo {
+  /* margin-left: 30px; */
+  width: 280px;
+  height: auto;
+}
+
+.social {
+  filter: brightness(100%);
+  transition: filter 0.3s ease-in-out; /* Add a transition for a smooth effect */
+}
+
+.social:hover {
+  filter: brightness(0%) invert(100%);
+}

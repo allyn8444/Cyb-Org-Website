@@ -6,13 +6,15 @@ export default {
       colors: {
         primary: {
           light: "#41635c",
-          DEFAULT: "#21332f",
+          DEFAULT: " #20332F;",
           dark: "#1d2e2a",
         },
+        "white":  "#FCFDFD"
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
         unbounded: ["Unbounded", "sans-serif"],
+        poppins: ["Poppings", "sans-serif"],
       },
     },
   },

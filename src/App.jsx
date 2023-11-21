@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 
 // TODO:
@@ -8,37 +9,8 @@ export default function App() {
   return (
     <>
       <Nav />
-      <section className="mt-24">
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
-        <p>Foo</p>
+      <section className="">
+        <Hero />
       </section>
     </>
   );
