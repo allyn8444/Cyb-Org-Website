@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import { primary, sections } from "../variables";
+import WhiteLogoSvg from "../assets/SVG/Logo WhiteAsset 21.svg";
 // import fullLogo from "../assets/PNG/logo transparent.png";
+import "../styles/Navbar.css";
 import { Dialog } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-import cybLogoFull from "../assets/PNG/cybLogoFull.png";
-import facebook from "../assets/SVG/facebook.svg";
-import gmail from "../assets/SVG/gmail.svg";
-import instagram from "../assets/SVG/instagram.svg";
-import twitter from "../assets/SVG/twitter.svg";
-import "../styles/Navbar.css";
 
-export default function Nav() {
+function Nav() {
   // Sidebar state
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -76,11 +72,11 @@ export default function Nav() {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         {" "}
@@ -90,9 +86,9 @@ export default function Nav() {
                             id="Vector"
                             d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001"
                             stroke={primary}
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                           ></path>{" "}
                         </g>{" "}
                       </g>
@@ -114,7 +110,7 @@ export default function Nav() {
                         className="mb-4"
                       >
                         <a href="">
-                          <span className="active:ring-4 active:ring-offset-2 active:ring-primary-light ">
+                          <span className="active:ring-4 active:ring-offset-2 active:ring-primary-light">
                             {section}
                           </span>
                         </a>
@@ -129,9 +125,8 @@ export default function Nav() {
       </AnimatePresence>
 
       {/* Desktop navbar */}
-      <nav className="h-32 w-full  fixed top-0 left-0 z-20 text-lg bg-gradient-to-b from-primary-dark">
-        <div className="mx-auto max-w-full h-full flex items-center ">
-          {/* LOGO */}
+      <nav className="h-24 w-full fixed top-0 left-0 z-[1] text-lg bg-gradient-to-b from-primary-dark">
+        <div className="mx-auto max-w-full h-full p-4 lg:px-20 px-8 flex items-center justify-between">
           <motion.a
             href=""
             className="flex items-center"
@@ -139,10 +134,16 @@ export default function Nav() {
             animate={{ opacity: 1, y: 0 }}
           >
             <img
-              src={cybLogoFull}
+              src={WhiteLogoSvg}
               alt="Logo of cyb.org"
-              className="nav-logo lg:ml-24"
+              className="h-10 lg:h-12 mr-1"
             />
+            <h1 className="text-3xl lg:text-4xl font-semibold">CYB:ORG</h1>
+            {/* <img
+              src={fullLogo}
+              alt="Logo of cyb.org"
+              className="h-24 lg:h-28"
+            /> */}
           </motion.a>
 
           {/* Responsive nav button */}
@@ -155,11 +156,11 @@ export default function Nav() {
               xmlns="http://www.w3.org/2000/svg"
               stroke="#000000"
             >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <g id="Menu / Menu_Alt_04">
@@ -167,9 +168,9 @@ export default function Nav() {
                     id="Vector"
                     d="M5 17H19M5 12H19M5 7H13"
                     stroke="#ffffff"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   ></path>
                 </g>
               </g>
@@ -178,44 +179,29 @@ export default function Nav() {
 
           {/* Desktop nav items */}
           <motion.ul
-            className="lg:flex space-x-1 hidden lg:mx-auto lg:placeholder:text-lg "
+            className="lg:flex space-x-1 hidden"
             variants={containerVariants}
             initial="hidden"
             animate="show"
           >
             {sections.map((section, i) => {
               return (
-                <motion.li key={i} variants={listItemYVariants} className="">
-                  <a href="" className="px-16 ">
+                <motion.li
+                  key={i}
+                  variants={listItemYVariants}
+                  className="mb-4"
+                >
+                  <a href="" className="px-4">
                     <span className="nav-items cursor-pointer">{section}</span>
                   </a>
                 </motion.li>
               );
             })}
           </motion.ul>
-
-          {/* Contacts */}
-          <motion.a
-            href=""
-            className="flex lg:mr-32 "
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            <img
-              src={facebook}
-              alt="facebook icon"
-              className="pr-3.5 nav-items social"
-            />
-            <img src={gmail} alt="gmail icon" className="pr-3.5 social" />
-            <img
-              src={instagram}
-              alt="instagram icon"
-              className="pr-3.5 social"
-            />
-            <img src={twitter} alt="twitter icon" className="social" />
-          </motion.a>
         </div>
       </nav>
     </>
   );
 }
+
+export default Nav;

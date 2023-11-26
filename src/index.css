@@ -2,23 +2,11 @@
 /* !!! TO BE CHANGED !!! */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* to prevent scrollbar from repositioning web page */
-html {
-  overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
-}
-
 body {
   @apply bg-primary text-white font-unbounded font-normal;
-}
-
-.hero {
-  top: 150px;
-  left: 55%;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./components/Hero";
 import Nav from "./components/Nav";
+import About_Us from "./components/About_Us";
 
 // TODO:
 // - Add colors
@@ -9,9 +9,7 @@ export default function App() {
   return (
     <>
       <Nav />
-      <section className="">
-        <Hero />
-      </section>
+      <About_Us />
     </>
   );
 }
