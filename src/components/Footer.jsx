@@ -8,29 +8,29 @@ export default function Footer() {
             href=""
             className="flex items-center mb-2 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <img src={cybLogo} className="h-12" alt="Flowbite Logo" />
+            <img src={cybLogo} className="h-12" alt="CYB:ORG Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
               CYB:ORG
             </span>
           </a>
           <ul className="flex flex-wrap items-center mb-4 text-sm font-medium  sm:mb-0 ">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="" className="hover:underline me-4 md:me-6">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="" className="hover:underline me-4 md:me-6">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="" className="hover:underline me-4 md:me-6">
                 Licensing
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="" className="hover:underline">
                 Contact
               </a>
             </li>
@@ -39,7 +39,7 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
         <span className="block text-sm  sm:text-center ">
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a href=" " className="hover:underline">
             CYB:ORG™
           </a>
           . All Rights Reserved.
